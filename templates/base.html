@@ -13,7 +13,9 @@
 </head>
 <body>
 {% block header %}{% endblock %}
-{% block body %}{% endblock %}
+<div class role="main">
+    {% block body %}{% endblock %}
+</div>
 {% block footer %}{% endblock %}
 </body>
 </html>

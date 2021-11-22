@@ -37,10 +37,11 @@ setup_page(true);
 {% endblock site-description %}
 
 {% block navmenu-footer %}
-<div class="grid-switcher">
-  <p>View:</p>
-  <a href="#" id="listbtn" class="switcher"><i class="fa fa-th-list"></i>&nbsp;List</a>
-  <a href="#" id="gridbtn" class="switcher"><i class="fa fa-th"></i>&nbsp;Grid</a>
+<p>Hello World!</p>
+<div class="grid-switcher" role="region" aria-label="Programme Display Options">
+  <p>Display As:</p>
+  <a href="#" id="listbtn" class="switcher" role="button"><i class="fa fa-th-list"></i>&nbsp;List</a>
+  <a href="#" id="gridbtn" class="switcher" role="button"><i class="fa fa-th"></i>&nbsp;Grid</a>
 </div><!-- end .grid-switcher -->
 {{ block.super }}
 <div class="print-media">

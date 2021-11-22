@@ -35,8 +35,8 @@
 {{ block.super }}
 <div id="container" class="body">
     <div id="sidebar" class="panel">
-      <div class="nav-wrap">
-          <a href="{% url "default-view" %}"><img src="{{ STATIC_URL }}{{ VENUE.nav_menu_img }}" alt="{{ VENUE.name }} logo" width="175" height="168"></a>
+      <div class="nav-wrap" role="banner">
+          <a href="{% url "default-view" %}" aria-hidden="true"><img src="{{ STATIC_URL }}{{ VENUE.nav_menu_img }}" alt="{{ VENUE.name }} logo" width="175" height="168"></a>
           <div id="site-title" class="clearfix">
               {% capture navmenu-title %}
               {% block navmenu-title %}
@@ -49,7 +49,7 @@
               {% endcapture %}
           </div><!-- end #site-description -->
       </div><!-- end .nav-wrap -->
-      <nav id="site-nav" class="clearfix">
+      <nav id="site-nav" class="clearfix" role="navigation">
           <div id="navmenu" class="menu-wrap">
             {% include "fragment_navmenu.html" %}
             {% block navmenu-footer %}

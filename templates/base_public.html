@@ -34,7 +34,7 @@
 {{ block.super }}
 <div id="container" class="body">
     <div id="sidebar" class="panel">
-      <div class="nav-wrap">
+      <div class="nav-wrap" role="banner">
           <div id="site-title" class="clearfix">
               {% capture navmenu-title %}
               {% block navmenu-title %}
@@ -48,7 +48,7 @@
               {% endcapture %}
           </div><!-- end #site-description -->
       </div><!-- end .nav-wrap -->
-      <nav id="site-nav" class="clearfix">
+      <nav id="site-nav" class="clearfix" role="navigation">
           <div id="navmenu" class="menu-wrap">
             {% include "fragment_navmenu.html" %}
             {% block navmenu-footer %}
@@ -59,7 +59,7 @@
     </div><!-- end #sidebar -->
     <div class="grid">
         <div class="black_overlay"></div>
-        <div class="navigation-wrap">
+        <div class="navigation-wrap" role="navigation">
             <div class="mobile-wrap">
               <a href="#nav-mobile" data-toggle=".grid" id="mobile-menu-btn"><i class="fa fa-bars"></i><span>Menu</span></a>
             </div><!-- end #mobile-wrap -->
